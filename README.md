@@ -10,3 +10,16 @@ I have only implemented Inpainting application, though other applications can be
 Below figure, illustrates inpainting for 8 randomly selected images from validation set with center masking. In each row, different noise code is used to show effectiveness of the method. With diversity loss, different noise codes correspond to different semantically meaningful images. 
 ![Inpainting illustration](https://github.com/yasinyazici/DSGAN-Tensorflow/blob/master/examples/inpainting.jpg)
 
+### Setup
+- Download the [CelebA dataset](https://drive.google.com/file/d/0B7EVK8r0v71pZjFTYXZWM3FlRnM/view).
+    
+- Change `data_dir` in `main.py` to wherever your 'img_align_celeba' file is.
+
+### Training
+Train the model with following script
+
+`python train.py`
+
+The training generates illustration like above at every 500 iteration.
+
+
