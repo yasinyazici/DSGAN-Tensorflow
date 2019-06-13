@@ -6,3 +6,8 @@ Official PyTorch implementation and project page can be found [here](https://git
 
 
 I have only implemented Inpainting application, though other applications can be included with trivial changes to the network architectures! This repository will be updated in the near future for the other applications.
+
+## Inpainting
+
+![Inpainting illustration](https://github.com/yasinyazici/DSGAN-Tensorflow/blob/master/examples/generation_016000.jpg)
+
