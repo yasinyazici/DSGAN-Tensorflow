@@ -3,11 +3,10 @@ Unofficial Tensorflow Implementation of Diversity-Sensitive Conditional Generati
 
 Official PyTorch implementation and project page can be found [here](https://github.com/maga33/DSGAN).
 
-
-
 I have only implemented Inpainting application, though other applications can be included with trivial changes to the network architectures! This repository will be updated in the near future for the other applications.
 
 ## Inpainting
 
+Below figure, illustrates inpating for 8 randomly selected images from validation set with center masking. In each row, different noise code is used to show effectiveness of the method. 
 ![Inpainting illustration](https://github.com/yasinyazici/DSGAN-Tensorflow/blob/master/examples/generation_016000.jpg)
 
