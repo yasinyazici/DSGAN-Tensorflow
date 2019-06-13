@@ -2,7 +2,7 @@ import tensorflow as tf
 from lib.ops import * 
 
 class GlobalTwoStreamGenerator(object):
-    def __init__(self, output_nc=3, ngf=64, z_dim=16, n_downsampling=3, n_blocks=3, norm_layer='instance',
+    def __init__(self, output_nc=3, ngf=64, z_dim=16, n_downsampling=3, n_blocks=9, norm_layer='instance',
                  padding_type='reflect', use_skip=False, which_stream='ctx', use_output_gate=True,
                  feat_fusion='early_add', extra_embed=False, name='generator'):
         assert(n_blocks >= 0)

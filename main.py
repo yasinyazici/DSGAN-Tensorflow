@@ -25,21 +25,21 @@ parser.add_argument('--crop_mode', type=str, default='none', help='[none|random]
 parser.add_argument('--lr', type=float, default=0.0002, help='adam: learning rate')
 parser.add_argument('--b1', type=float, default=0.5, help='adam: decay of first order momentum of gradient')
 parser.add_argument('--b2', type=float, default=0.999, help='adam: decay of first order momentum of gradient')
-parser.add_argument('--n_cpu', type=int, default=4, help='number of cpu threads to use during batch generation')
-parser.add_argument('--latent_dim', type=int, default=100, help='dimensionality of the latent space')
+#parser.add_argument('--n_cpu', type=int, default=4, help='number of cpu threads to use during batch generation')
+#parser.add_argument('--latent_dim', type=int, default=100, help='dimensionality of the latent space')
 parser.add_argument('--img_size', type=int, default=128, help='size of each image dimension')
-parser.add_argument('--load_size', type=int, default=280, help='size of each image loading dimension')
+#parser.add_argument('--load_size', type=int, default=280, help='size of each image loading dimension')
 parser.add_argument('--mask_size', type=int, default=64, help='size of random mask')
 parser.add_argument('--channels', type=int, default=3, help='number of image channels')
 parser.add_argument('--sample_interval', type=int, default=500, help='interval between image sampling')
 parser.add_argument('--n_rows', type=int, default=5, help='number of rows to generate for visualization')
-parser.add_argument('--snapshot_interval', type=int, default=1, help='interval between image sampling')
+#parser.add_argument('--snapshot_interval', type=int, default=1, help='interval between image sampling')
 parser.add_argument('--vis_interval', type=int, default=500, help='interval between image sampling')
 parser.add_argument('--checkpoint_dir', type=str, default='./checkpoints', help='location to checkpoint')
 parser.add_argument('--noise_w', type=float, default=5, help='weights for diversity-encouraging term')
 parser.add_argument('--feat_w', type=float, default=10, help='weights for pixel-wise similarity term')
 parser.add_argument('--noise_dim', type=int, default=32, help='dimmension for noise vector')
-parser.add_argument('--no_noise', action='store_true', help='do not use the noise if specified')
+#parser.add_argument('--no_noise', action='store_true', help='do not use the noise if specified')
 parser.add_argument('--dist_measure', type=str, default='perceptual', help='[rgb | perceptual]')
 parser.add_argument('--n_layers_G', type=int, default=3, help='number of layers in generator')
 parser.add_argument('--n_layers_D', type=int, default=3, help='number of layers in discriminator')
@@ -57,15 +57,7 @@ if not args.crop_mode == 'random':
 checkpoint_dir = os.path.abspath(os.path.join(args.checkpoint_dir, exp_name))
 if not os.path.exists(checkpoint_dir):
     os.makedirs(checkpoint_dir)
-    
-#x = os.path.normpath(checkpoint_dir).split(os.sep)
-#if 'users' in x:
-#    data_dir = '/home/users/ntu/yasin001/scratch/data/'
-#elif 'yazici' in x:
-#    data_dir = '/home/yazici/Documents/data/'
-#else:
-#    raise NotImplementedError("not implemented")
-    
+
 data_dir = '/home/yazici/Documents/data/' 
 data_path = os.path.abspath(data_dir+"%s" % args.dataset_name)
 
