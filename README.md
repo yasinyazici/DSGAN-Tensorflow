@@ -8,5 +8,5 @@ I have only implemented Inpainting application, though other applications can be
 ## Inpainting
 
 Below figure, illustrates inpainting for 8 randomly selected images from validation set with center masking. In each row, different noise code is used to show effectiveness of the method. With diversity loss, different noise codes correspond to different semantically meaningful images. 
-![Inpainting illustration](https://github.com/yasinyazici/DSGAN-Tensorflow/blob/master/examples/generation_016000.jpg)
+![Inpainting illustration](https://github.com/yasinyazici/DSGAN-Tensorflow/blob/master/examples/inpainting.jpg)
 
